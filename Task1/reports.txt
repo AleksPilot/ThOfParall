@@ -1,0 +1,76 @@
+Default (double, 10^7)
+/home/a.tarasov/task1kernels.c
+  main  NVIDIA  devicenum=0
+    time(us): 6,145
+    12: compute region reached 1 time
+        13: kernel launched 1 time
+            grid: [65535]  block: [128]
+            elapsed time(us): total=156 max=156 min=156 avg=156
+        13: reduction kernel launched 1 time
+            grid: [1]  block: [256]
+            elapsed time(us): total=114 max=114 min=114 avg=114
+    12: data region reached 2 times
+        12: data copyin transfers: 1
+             device time(us): total=4 max=4 min=4 avg=4
+        18: data copyout transfers: 6
+             device time(us): total=6,141 max=1,285 min=9 avg=1,023
+Res: -3.126388e-12
+
+FloatTest1 (float, 10^7)
+Accelerator Kernel Timing data
+/home/a.tarasov/task1kernels.c
+  main  NVIDIA  devicenum=0
+    time(us): 3,095
+    12: compute region reached 1 time
+        13: kernel launched 1 time
+            grid: [65535]  block: [128]
+            elapsed time(us): total=136 max=136 min=136 avg=136
+        13: reduction kernel launched 1 time
+            grid: [1]  block: [256]
+            elapsed time(us): total=97 max=97 min=97 avg=97
+    12: data region reached 2 times
+        12: data copyin transfers: 1
+             device time(us): total=5 max=5 min=5 avg=5
+        18: data copyout transfers: 4
+             device time(us): total=3,090 max=1,285 min=8 avg=772
+Res: 1.218414e-02
+
+FloatTest2 (float, 10^8)
+Accelerator Kernel Timing data
+/home/a.tarasov/task1kernels.c
+  main  NVIDIA  devicenum=0
+    time(us): 30,629
+    12: compute region reached 1 time
+        13: kernel launched 1 time
+            grid: [65535]  block: [128]
+            elapsed time(us): total=509 max=509 min=509 avg=509
+        13: reduction kernel launched 1 time
+            grid: [1]  block: [256]
+            elapsed time(us): total=115 max=115 min=115 avg=115
+    12: data region reached 2 times
+        12: data copyin transfers: 1
+             device time(us): total=4 max=4 min=4 avg=4
+        18: data copyout transfers: 25
+             device time(us): total=30,625 max=1,290 min=8 avg=1,225
+Res: 2.236195e-01
+
+FloatTest3 (float, 10^6)
+Accelerator Kernel Timing data
+/home/a.tarasov/task1kernels.c
+  main  NVIDIA  devicenum=0
+    time(us): 334
+    12: compute region reached 1 time
+        13: kernel launched 1 time
+            grid: [7813]  block: [128]
+            elapsed time(us): total=40 max=40 min=40 avg=40
+        13: reduction kernel launched 1 time
+            grid: [1]  block: [256]
+            elapsed time(us): total=21 max=21 min=21 avg=21
+    12: data region reached 2 times
+        12: data copyin transfers: 1
+             device time(us): total=4 max=4 min=4 avg=4
+        18: data copyout transfers: 2
+             device time(us): total=330 max=323 min=7 avg=165
+Res: 5.212545e-03
+
+
